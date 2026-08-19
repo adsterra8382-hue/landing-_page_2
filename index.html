@@ -20,6 +20,52 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <!-- Image Full Display Fix -->
+
+  <style>
+
+    .thumb {
+
+      position: relative;
+
+      width: 100%;
+
+      height: auto !important;
+
+      overflow: visible !important;
+
+    }
+
+    .thumb img {
+
+      display: block;
+
+      width: 100% !important;
+
+      height: auto !important;
+
+      max-height: none !important;
+
+      object-fit: contain !important;
+
+    }
+
+    .thumb .play {
+
+      position: absolute;
+
+      top: 50%;
+
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      z-index: 2;
+
+    }
+
+  </style>
+
 </head>
 
 <body>
@@ -27,8 +73,6 @@
   <main class="page">
 
     <section class="card">
-
-      <!-- Front Image -->
 
       <div class="thumb">
 
